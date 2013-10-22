@@ -1,8 +1,8 @@
 latex-course
 ============
 
-A short course on LaTeX for Beginners: how to write reports/papers/thesis. 
+A short course on LaTeX for Beginners: How to write your reports/papers/thesis in LaTeX. 
 
-- Krishna Kumar, PhD Student in Engineering, University of Cambridge.
+- Krishna Kumar, PhD Student in Engineering, University of Cambridge. 
 
-The course is loosely based on notes from UCS, LaTeX WikiBook.
+Acknowledgment: LaTeX WikiBook, UCS Cambridge.
