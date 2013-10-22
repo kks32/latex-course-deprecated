@@ -1,0 +1,53 @@
+%*****************************************************************************************
+%***************************** Article for alignment *************************************
+%*****************************************************************************************
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna nisi, aliquam id blandit id, congue ac est. Fusce porta consequat leo. Proin feugiat at felis vel consectetur. Ut tempus ipsum sit amet congue posuere. Nulla varius rutrum quam. Donec sed purus luctus, faucibus velit id, ultrices sapien. Cras diam purus, tincidunt eget tristique ut, egestas quis nulla. Curabitur vel iaculis lectus. Nunc nulla urna, ultrices et eleifend in, accumsan ut erat. In ut ante leo. Aenean a lacinia nisl, sit amet ullamcorper dolor. Maecenas blandit, tortor ut scelerisque congue, velit diam volutpat metus, sed vestibulum eros justo ut nulla. Etiam nec ipsum non enim luctus porta in in massa. Cras arcu urna, malesuada ut tellus ut, pellentesque mollis risus.Morbi vel tortor imperdiet arcu auctor mattis sit amet eu nisi. Nulla gravida urna vel nisl egestas varius. Aliquam posuere ante quis malesuada dignissim. Mauris ultrices tristique eros, a dignissim nisl iaculis nec. Praesent dapibus tincidunt mauris nec tempor. Curabitur et consequat nisi. Quisque viverra egestas risus, ut sodales enim blandit at. Mauris quis odio nulla. Cras euismod turpis magna, in facilisis diam congue non. Mauris faucibus nisl a orci dictum, et tempus mi cursus.
+
+%*****************************************************************************************
+%********************************* Quotation *********************************************
+%*****************************************************************************************
+\emph{Note you need to type the quotes, however, the text is indented}}
+``Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna nisi, aliquam id blandit id, congue ac est. Fusce porta consequat leo. Proin feugiat at felis vel consectetur. Ut tempus ipsum sit amet congue posuere. Nulla varius rutrum quam. Donec sed purus luctus, faucibus velit id, ultrices sapien. Cras diam purus, tincidunt eget tristique ut, egestas quis nulla. Curabitur vel iaculis lectus."\\
+
+\flushleft
+To ``double quote in \LaTeX " \\ %use of line break
+To ` single quote in \LateX ' \\
+
+To ,,how to quote in \LaTeX " \\ 
+
+%*****************************************************************************************
+%*********************************** Poetry **********************************************
+%*****************************************************************************************
+
+Two roads diverged in a yellow wood,	
+And sorry I could not travel both	
+And be one traveler, long I stood	
+And looked down one as far as I could	
+To where it bent in the undergrowth;	        
+ 
+Then took the other, as just as fair,	
+And having perhaps the better claim,	
+Because it was grassy and wanted wear;	
+Though as for that the passing there	
+Had worn them really about the same,	        
+ 
+And both that morning equally lay	
+In leaves no step had trodden black.	
+Oh, I kept the first for another day!	
+Yet knowing how way leads on to way,	
+I doubted if I should ever come back.	        
+ 
+I shall be telling this with a sigh	
+Somewhere ages and ages hence:	
+Two roads diverged in a wood, and IÑ	
+I took the one less traveled by,	
+And that has made all the difference.
+
+%*****************************************************************************************
+%*********************************** Verbatim ********************************************
+%*****************************************************************************************
+
+It makes \LaTeXe a typewriter. It p r i n t s whatever y. O. u. type without altering the
+style of the content. sO You CAn Type hOWEVEr you LikE. You can go beyond the margin
+so be aware of that! In verbatim you can type %@~>?*&^$	!

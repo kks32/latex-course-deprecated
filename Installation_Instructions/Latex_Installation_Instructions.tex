@@ -1,0 +1,144 @@
+\documentclass[a4paper,twoside,12pt,fleqn,openright]{article}
+\setcounter{tocdepth}{4}
+\def\pdfshellescape{1}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{a4wide}
+% For Print version
+%\usepackage[pdftex, plainpages=false, pdfpagelabels, pdfpagelayout=useoutlines, bookmarks, bookmarksopen=true, bookmarksnumbered=true, breaklinks=true, linktocpage, pagebackref=false, colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black, anchorcolor=black, hyperindex=false, hyperfigures]{hyperref}
+% For PDF Online version
+\usepackage[pdftex, plainpages=false, pdfpagelabels, pdfpagelayout=useoutlines, bookmarks, bookmarksopen=true, bookmarksnumbered=true, breaklinks=true, linktocpage, pagebackref=false, colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue, anchorcolor=green, hyperindex=false, hyperfigures]{hyperref}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{amssymb}%
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{etex}
+\usepackage{fancyhdr}   % Use fancy headers package to produce headers
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{subfigure}
+\usepackage[figurename=Fig.,labelsep=space,tableposition=top]{caption}
+\usepackage[round,colon,authoryear]{natbib}
+\usepackage{appendix}
+\usepackage{caption}
+\usepackage{epstopdf}
+\usepackage{url}
+\usepackage[table]{xcolor}
+
+%% Define a new 'leo' style for the package that will use a smaller font.
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}
+%*********************************** To copy ligatures ********************************************************************************************* %
+\usepackage[ansinew]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{libertine}
+\input{glyphtounicode}
+
+\pdfglyphtounicode{f_f}{FB00}
+\pdfglyphtounicode{f_f_i}{FB03}
+\pdfglyphtounicode{f_f_l}{FB04}
+\pdfglyphtounicode{f_i}{FB01}
+\pdfgentounicode=1
+%opening
+\title{\LaTeXe Installation Instructions}
+\author{Krishna Kumar\thanks{kks32@cam.ac.uk}}
+\date{}
+\begin{document}
+
+\maketitle
+\centering
+\textbf{DVDs are available in the Grad Suite Computer room}
+\flushleft
+\section*{Windows OS: DVD-KCGS/Win/Latex/Jan2012/01}
+\textbf{Basic MikTex (Tex package distribution) - compact / basic installer}\\
+\begin{enumerate}
+\item	Download Basic-MikTex 2.9 (32bit or 64bit) from \href{http://miktex.org/download}{http://miktex.org/download}
+\item	Run the installer \href{http://docs.miktex.org/2.9/manual/ch02s02.html}{http://docs.miktex.org/2.9/manual/ch02s02.html}
+\item	To add a new package go to Start >> All Programs >> MikTex 2.9 >> Maintenance (Admin) and choose Package Manager
+\item	Select or search for packages to install
+\end{enumerate}
+or\\
+\textbf{TeXLive package - full version}\\
+\begin{enumerate}
+\item	Download the TeXLive ISO (2.2GB) from \href{http://anorien.csc.warwick.ac.uk/mirrors/CTAN/systems/texlive/Images/texlive2013.iso}{http://anorien.csc.warwick.ac.uk/mirrors/CTAN/systems/texlive/Images/texlive2013.iso}
+\item	Download WinCDEmu (if you don't have a virtual drive) from \href{http://wincdemu.sysprogs.org/download/WinCDEmu-3.6.exe}{http://wincdemu.sysprogs.org/download/WinCDEmu-3.6.exe}
+\item	To install Windows CD Emulator follow the instructions at \href{http://wincdemu.sysprogs.org/tutorials/install/}{http://wincdemu.sysprogs.org/tutorials/install/}
+\item	Right click the iso and mount it using the WinCDEmu as shown in \href{http://wincdemu.sysprogs.org/tutorials/mount/}{http://wincdemu.sysprogs.org/tutorials/mount/}
+\item	Open your virtual drive and run setup.pl
+\end{enumerate}
+
+\textbf{TexStudio (Tex Editor)}\\
+\begin{enumerate}
+\item	Download TexStudio 2.6 from \href{http://texstudio.sourceforge.net/\#downloads}{http://texstudio.sourceforge.net/\#downloads} 
+\item	Run the installer
+\end{enumerate}
+
+\section*{Mac OS X: DVD-KCGS/Mac/Latex/Jan2012/01}
+\textbf{MacTex (Installs TexLive 2013)}\\
+\begin{enumerate}
+\item	Download the file from \href{http://mirror.ctan.org/systems/mac/mactex/MacTeX.pkg}{http://mirror.ctan.org/systems/mac/mactex/MacTeX.pkg}
+\item	Extract and double click to run the installer. It does the entire configuration, sit back and relax.
+\end{enumerate}
+
+\textbf{TexStudio (Tex Editor)}
+\begin{enumerate}
+\item	Download TexStudio 2.6 from \href{http://texstudio.sourceforge.net/\#downloads}{http://texstudio.sourceforge.net/\#downloads} 
+\item	Extract and Start
+\end{enumerate}
+
+
+\section*{Unix/Linux: DVD-KCGS/Unix/Latex/Jan2012/01}
+\textbf{Tex Live 2013}\\
+\textbf{Getting the distribution:}\\
+\begin{enumerate}
+\item	TexLive can be downloaded from \href{http://www.tug.org/texlive/acquire-netinstall.html}{http://www.tug.org/texlive/acquire-netinstall.html}. You might require wget to download through proxies.
+\item	TexLive DVD is also available in the Grad Suite
+\item	TexLive is provided by most operating system you can use (rpm,apt-get or yum) to get TexLive distributions (note: usually it's the old TexLive 2007) 
+\end{enumerate}
+
+\textbf{Installation}\\
+\begin{enumerate}
+\item	Mount the ISO file in the mnt directory\\
+
+\begin{verbatim}mount -t iso9660 -o ro,loop,noauto /your/texlive2011.iso /mnt\end{verbatim}
+
+\item	Get wget on your OS (use rpm, apt-get or yum install)
+\item	Run the installer script install-tl.
+\begin{verbatim}
+	cd /your/download/directory
+	./install-tl
+\end{verbatim}
+\item	Enter command `i' for installation
+
+\item	Post-Installation configuration: \href{http://www.tug.org/texlive/doc/texlive-en/texlive-en.html\#x1-320003.4.1}{http://www.tug.org/texlive/doc/texlive-en/texlive-en.html\#x1-320003.4.1} 
+\item	Set the path for the directory of TexLive binaries in your .bashrc file\\
+\textbf{For 32Bit OS}\\
+For Bourne-compatible shells such as bash, and using Intel x86 GNU/Linux and a default directory setup as an example, the file to edit might be \begin{verbatim}
+edit $~/.bashrc file and add following lines
+PATH=/usr/local/texlive/2011/bin/i386-linux:$PATH; export PATH 
+MANPATH=/usr/local/texlive/2011/texmf/doc/man:$MANPATH; export MANPATH 
+INFOPATH=/usr/local/texlive/2011/texmf/doc/info:$INFOPATH; export INFOPATH
+\end{verbatim}
+\textbf{For 64Bit}\\
+\begin{verbatim}
+edit $~/.bashrc file and add following lines
+PATH=/usr/local/texlive/2011/bin/x86_64-linux:$PATH; export PATH 
+MANPATH=/usr/local/texlive/2011/texmf/doc/man:$MANPATH; export MANPATH 
+INFOPATH=/usr/local/texlive/2011/texmf/doc/info:$INFOPATH; export INFOPATH
+
+\end{verbatim}
+
+\end{enumerate}
+
+\end{document}

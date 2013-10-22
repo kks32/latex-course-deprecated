@@ -1,0 +1,13 @@
+.DS_Store*
+*.aux
+*.log
+*.lof
+*.lot
+*.out
+*.gz
+*.toc
+*.bbl
+*.blg
+*.nav
+*.snm
+.fuse_*

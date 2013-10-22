@@ -1,0 +1,73 @@
+% Exercise 6: Text Alignment and Spacing
+
+% 1. Create an article class 
+
+% Sometimes a class, for eg, article might not have a template or functions for all the things you would like to do. If you want to include figures, you need to include a package called graphix and in this case you would need to include certain packages like setspace to generate text with double line spacing. To load a package in \LaTeX after document class type \usepackage[options]{package}
+
+% 2. Uncomment the following packages to load them
+%\usepackage{shapepar}
+%\usepackage{setspace}
+%\usepackage{multicol}
+
+% 3. Begin document. Now we are going to use the text in Ex_6.txt to align the text to the left, center and right.
+
+% 4. Align the text to the left using flushleft environment use \begin{flushleft} your text and finish it with \end{flushleft}
+
+% 5. Align the text to the right using flushright environment use \begin{flushright} your text and finish it with \end{flushright}
+
+% *. Alternatively you can use \raggedright \raggedleft to generate flushleft and flushright - try it out!
+
+% 6. To center align use \begin{center} and \end{center} or try using \centering and see if that works!
+
+% 7. Now we will typeset the text with 2.5 line spacing and double line spacing to do that we need to load the package "setspace" go to step 2 and make sure you have uncommented \usepackage{setspace}
+
+% 8. To typeset the text with 2.5 line spacing begin an environment called spacing and set it to 2.5 like this: \begin{spacing}{2.5} and close with \end{spacing} to create doublespace you can use the \begin{doublespace} environment
+
+% 9. You can manually add hortizontal and vertical spacing between characters/words/lines/paragraphs using \hspace{length} and \vspace{length}. length can be in any units, try pt, mm, cm and in! inside your text like \hspace{5cm}
+
+% 10. For fun: Uncomment the following section and see what shapes you can typeset! Requires shapepar package.
+
+%\section*{For fun: Diamond, heart and nuts}
+%\diamondpar{
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna nisi, aliquam id blandit id, congue ac est. Fusce porta consequat leo. Proin feugiat at felis vel consectetur. Ut tempus ipsum sit amet congue posuere. Nulla varius rutrum quam. Donec sed purus luctus, faucibus velit id, ultrices sapien. Cras diam purus, tincidunt eget tristique ut, egestas quis nulla. Curabitur vel iaculis lectus. Nunc nulla urna, ultrices et eleifend in, accumsan ut erat. In ut ante leo. Aenean a lacinia nisl, sit amet ullamcorper dolor. Maecenas blandit, tortor ut scelerisque congue, velit diam volutpat metus, sed vestibulum eros justo ut nulla. Etiam nec ipsum non enim luctus porta in in massa. Cras arcu urna, malesuada ut tellus ut, pellentesque mollis risus.Morbi vel tortor imperdiet arcu auctor mattis sit amet eu nisi. Nulla gravida urna vel nisl egestas varius. Aliquam posuere ante quis malesuada dignissim. Mauris ultrices tristique eros, a dignissim nisl iaculis nec. Praesent dapibus tincidunt mauris nec tempor. Curabitur et consequat nisi. Quisque viverra egestas risus, ut sodales enim blandit at. Mauris quis odio nulla. Cras euismod turpis magna, in facilisis diam congue non. Mauris faucibus nisl a orci dictum, et tempus mi cursus.
+%}
+%
+%
+%\heartpar{
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna nisi, aliquam id blandit id, congue ac est. Fusce porta consequat leo. Proin feugiat at felis vel consectetur. Ut tempus ipsum sit amet congue posuere. Nulla varius rutrum quam. Donec sed purus luctus, faucibus velit id, ultrices sapien. Cras diam purus, tincidunt eget tristique ut, egestas quis nulla. Curabitur vel iaculis lectus. Nunc nulla urna, ultrices et eleifend in, accumsan ut erat. In ut ante leo. Aenean a lacinia nisl, sit amet ullamcorper dolor. Maecenas blandit, tortor ut scelerisque congue, velit diam volutpat metus, sed vestibulum eros justo ut nulla. Etiam nec ipsum non enim luctus porta in in massa. Cras arcu urna, malesuada ut tellus ut, pellentesque mollis risus.Morbi vel tortor imperdiet arcu auctor mattis sit amet eu nisi. Nulla gravida urna vel nisl egestas varius. Aliquam posuere ante quis malesuada dignissim. Mauris ultrices tristique eros, a dignissim nisl iaculis nec. Praesent dapibus tincidunt mauris nec tempor. Curabitur et consequat nisi. Quisque viverra egestas risus, ut sodales enim blandit at. Mauris quis odio nulla. Cras euismod turpis magna, in facilisis diam congue non. Mauris faucibus nisl a orci dictum, et tempus mi cursus.
+%}
+%
+%\newpage % New page and for line break use \\* or \\
+%
+%\shapepar\nutshape{
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna nisi, aliquam id blandit id, congue ac est. Fusce porta consequat leo. Proin feugiat at felis vel consectetur. Ut tempus ipsum sit amet congue posuere. Nulla varius rutrum quam. Donec sed purus luctus, faucibus velit id, ultrices sapien. Cras diam purus, tincidunt eget tristique ut, egestas quis nulla. Curabitur vel iaculis lectus. Nunc nulla urna, ultrices et eleifend in, accumsan ut erat. In ut ante leo. Aenean a lacinia nisl, sit amet ullamcorper dolor. Maecenas blandit, tortor ut scelerisque congue, velit diam volutpat metus, sed vestibulum eros justo ut nulla. Etiam nec ipsum non enim luctus porta in in massa. Cras arcu urna, malesuada ut tellus ut, pellentesque mollis risus.Morbi vel tortor imperdiet arcu auctor mattis sit amet eu nisi. Nulla gravida urna vel nisl egestas varius. Aliquam posuere ante quis malesuada dignissim. Mauris ultrices tristique eros, a dignissim nisl iaculis nec. Praesent dapibus tincidunt mauris nec tempor. Curabitur et consequat nisi. Quisque viverra egestas risus, ut sodales enim blandit at. Mauris quis odio nulla. Cras euismod turpis magna, in facilisis diam congue non. Mauris faucibus nisl a orci dictum, et tempus mi cursus.
+%}
+%
+%\newpage %or use clearpage
+
+
+
+% 11. You can create multicolumn text using multicols environment. Uncomment to test it!
+
+%\section*{Multicolumn}
+%
+%\begin{multicols}{3} 
+%\raggedright 
+%%try \flushcolumns
+%Here is some text to be distributed over several columns. In this example ragged right typesetting is used.
+%\setcounter{unbalance}{1}
+%\end{multicols}
+%
+%\begin{multicols}{2} 
+%\flushcolumns
+%Here is some text to be distributed over several columns. In this example ragged right typesetting is used.
+%\setcounter{unbalance}{1}
+%\end{multicols}
+
+% 12. How to typeset quotation? Copy the text in Ex_6.txt under quotation and use it within the quotation environment \begin{quotation} your_content \end{quotation}. If you encounter an error try to fix it (check spelling of \LaTeX)
+
+% 13. Time to write a poem. Use \begin{verse} content... \end{verse} environment to typeset a poem! (use the text from Ex_6.txt under poem)
+
+% 14. What if you want to type like in WYSISWYG Editors, \LaTeX has an environment called verbatim try it out! use the text from Ex_6.txt under verbatim
+
+% 15. Make sure you close your document! \end{document}
