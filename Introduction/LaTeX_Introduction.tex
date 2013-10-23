@@ -48,7 +48,7 @@
 %{Include Only If Paper Has a Subtitle}
 
 \author[Krishna Kumar] % (optional, use only with lots of authors)
-{Krishna Kumar \inst{*}\thanks{kks32@cam.ac.uk}\\ } % \and S.~Another\inst{2}}
+{Krishna Kumar \inst{*}\thanks{kks32@cam.ac.uk} } % \and S.~Another\inst{2}}
 % - Give the names in the same order as the appear in the paper.
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
@@ -98,6 +98,46 @@ King's College\\ University of Cambridge}
 
 %**********************************************INTRODUCTION***************************************
 \section{Introduction to \LaTeX2e}
+%**********************************************FRAME***************************************
+\begin{frame}{What is \LaTeX?}
+\begin{itemize}
+\item \LaTeX{} is a document preparation system for the \TeX{} typesetting program. 
+
+\item Programmable desktop publishing, which automates most of the typesettign.
+
+\item The current version is \LaTeXe.
+\end{itemize}
+\begin{align}
+    E &= mc^2                              \\
+    m &= \frac{m_0}{\sqrt{1-\frac{v^2}{c^2}}}
+\end{align}
+\end{frame}
+
+
+%**********************************************FRAME***************************************
+\begin{frame}{Can you see beyond the WYSIWYG Bubble?}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{figs/LaTeX_Word.png}
+\end{figure}
+\end{frame}
+
+%**********************************************FRAME***************************************
+\begin{frame}{\LaTeX Pros and Cons}
+\textbf{Pros}
+\begin{itemize}
+\item    It's free and works on all OSs.
+\item    LaTeX files are ASCII and are portable.
+\item    The typesetting's better, especially the maths.
+\item    Style changes are neater in LaTeX. 
+\end{itemize}
+\textbf{Cons}
+\begin{itemize}
+\item    Font selection is difficult, but one can use XeTeX.
+\item    LaTeX's not good at flowing text around pictures.
+\item    LaTeX encourages (almost insists on) structured writing and the separation of style from content. This is not the way that many people (especially non-programmers) are used to working.
+\item    Without a WYSIWYG front end, it's not always easy to find out how to do things.
+\end{itemize}
+\end{frame}
 %**********************************************FRAME***************************************
 \begin{frame}
 \frametitle{Developers}
