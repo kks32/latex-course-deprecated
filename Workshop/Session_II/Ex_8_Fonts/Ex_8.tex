@@ -1,0 +1,77 @@
+% Exercise 8: Font size, restricted characted, accents and ligatures
+
+% 1. Change the font size in the options in document class to [12pt] and see how the Loren Ipsum text changes!
+\documentclass[10pt]{article}
+
+% Leave the preamble commented out for now!
+%%************************************** Preamble *************************************** %
+%\usepackage[ansinew]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{libertine}
+%\input{glyphtounicode}
+%
+%\pdfglyphtounicode{f_f}{FB00}
+%\pdfglyphtounicode{f_f_i}{FB03}
+%\pdfglyphtounicode{f_f_l}{FB04}
+%\pdfglyphtounicode{f_i}{FB01}
+%
+%\pdfgentounicode=1
+%%********************************************************************************************** % 
+
+\begin{document}
+ 
+% ******************************************* FONT SIZE *****************************************
+
+\flushleft
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna nisi, aliquam id blandit id, congue ac est. Fusce porta consequat leo. Proin feugiat at felis vel consectetur. Ut tempus ipsum sit amet congue posuere. Nulla varius rutrum quam. Donec sed purus luctus, faucibus velit id, ultrices sapien. Cras diam purus, tincidunt eget tristique ut, egestas quis nulla. Curabitur vel iaculis lectus. Nunc nulla urna, ultrices et eleifend in, accumsan ut erat. In ut ante leo. Aenean a lacinia nisl, sit amet ullamcorper dolor. Maecenas blandit, tortor ut scelerisque congue, velit diam volutpat metus, sed vestibulum eros justo ut nulla. Etiam nec ipsum non enim luctus porta in in massa. Cras arcu urna, malesuada ut tellus ut, pellentesque mollis risus.
+
+\section{Font Size}
+
+% 2. See what various fontsize commands, whih can be used to typeset different font sizes
+\flushleft
+\tiny
+tiny \\
+\scriptsize
+scriptsize \\
+\footnotesize
+footnotesize \\
+\small
+small\\
+\normalsize
+normalsize \\
+\large
+large \\
+\Large
+Large \\
+\LARGE
+LARGE \\
+\huge
+huge \\
+\Huge
+Huge \\
+
+
+\normalsize
+
+% ******************************** Restricted Characters ********************************************
+\section{Restricted Characters}
+
+% 3. Lets now try to type some restricted characters. You need to use a '\' before restricted characters
+How to type %# % $ { } \\
+
+% **************************************** Accents *************************************************
+\section{Accents}
+
+% 4. Checkout the various accents you can type in \LaTeX
+\"{a}\H{a}\'{a}\`{a}\~{a}\^{a}\'{C}\u{U}
+
+% ************************************** Ligatures  ********************************************
+\section{Ligatures}
+
+% 5. This is very important. LaTeX uses proper ligatures for sets of characters like ff, fl, fi etc. So when you copy the following line and paste it in a text editor, you can see you would miss those characters. 
+
+% 6. To make sure you can copy ff as ff itself instead of a single ligature, uncomment the preamble and try again!
+
+Now I can type fluid, ffl, ffi fi and copy them as well!
+
+\end{document}
