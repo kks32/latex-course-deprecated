@@ -1,0 +1,47 @@
+% Exercise 11: Bibliography
+
+% 1. Create a BibTeX .bib file with the references. This can be generated using Mendeley or JabRef or using Google Scholar. They all support export to BibTeX
+
+\documentclass[openany]{book}
+
+% 2. You can try different styles. First we will try using author year citation.
+
+%\usepackage[numbers]{natbib}
+%\usepackage[super,comma,sort]{natbib}
+\usepackage[round,colon,authoryear]{natbib}
+\usepackage{cleveref}
+
+\usepackage{setspace}
+
+\begin{document}
+\chapter{This is my First Chapter}
+
+% 3. Now we'll reference a section using cleveref package ~\cref{sec_label}
+
+% 4. Create a citation with author name outside and number in paranthesis use ~\citet{Agn2007}. ~ keeps the citation and the text together.
+
+Here I can reference the section on Chapter 2 (see: ). To add reference open the bibliography file in TexStudio. Then you can cite in whatever manner you wish %cite with text here
+ or like % cite in paragraph~\citep{Choi2005,Dasari2000,frisch1995}
+
+\chapter{Second Chapter}
+\section{Section to be labelled}  \label{sec_label}
+Second chapter goes on \dots
+
+I can also have some more references here \dots can't I? %\citet{Gallouat2010}.
+
+Here I have listed it as %\citep[see][]{mehta1994}
+
+
+
+
+%********************************************Bibliography**********************************************************************%
+
+\begin{spacing}{0.9}
+\bibliographystyle{apalike} % bibliography style - apalike, plain
+\renewcommand{\bibname}{References} % changes default name Bibliography to References
+\cleardoublepage
+\addcontentsline{toc}{chapter}{References} %adds References to contents page
+\bibliography{References}
+\end{spacing}
+%************************************************************************************************************************************** %
+\end{document}

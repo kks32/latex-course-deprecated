@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{amsmath}
+\title{Equations}
+\author{Krishna Kumar\thanks{kks32@cam.ac.uk}}
+\date{}
+\begin{document}
+\maketitle
+
+\section*{Inline Equation}
+
+The most famous equation in the world: $E^2 = (m_0c^2)^2 + (pc)^2$ - The \textbf{energy-mass-momentum} relation as an in-line equation.
+
+\section{equation and align environment}
+\begin{equation}
+ f(x)= \sin^2x+\frac{\tan \mathit{x}}{\log \mathit{x}} + \mathbf{X}^T\times\mathbf{X}
+\end{equation}
+
+\begin{equation*}
+\iint_{0}^{\infty}   f(x,y)dx dy
+\end{equation*}
+
+\begin{eqnarray}
+	y   & = & ax+b \nonumber\\
+	y+1 & = & ax+(b+1)\\
+	    & = & ax+(b+2)-1
+\end{eqnarray}
+
+\begin{multline}
+f(x)=a1x_1+a2x_2+a3x_3+a_4x_4+
+\sqrt{a1x_1+a2x_2+a3x_3+a_4x_4}+\\
+a1x_1+a2x_2+a3x_3+a_4x_4+
+a1x_1+a2x_2+a3x_3+a_4x_4
+\end{multline}
+
+\begin{equation}
+A_{m,n} =
+ \begin{pmatrix}
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n}
+ \end{pmatrix}
+\end{equation}
+
+\end{document}

@@ -1,0 +1,77 @@
+\chapter{Tables}
+\section{Tables with and without borders}
+Here is a table
+
+\begin{table}[h]
+\caption{Table with borders}
+\begin{tabular}{l c r}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9 \\
+\end{tabular}
+\end{table}
+
+
+\section{Tables with borders}
+Here is a table
+
+\begin{table}[h]
+\caption{Table without borders}
+\begin{tabular}{|l|c| r|}
+\hline
+1 & 2 & 3 \\ \hline
+4 & 5 & 6 \\ \hline
+7 & 8 & 9 \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Tables with different borders}
+
+\begin{tabular}{|r|l|}
+  \hline
+  7C0 & hexadecimal \\\hline
+  3700 & octal \\ \cline{2-2}
+  11111000000 & binary \\  \hline \hline
+  1984 & decimal \\   \hline
+\end{tabular}
+
+
+
+\section{Multi-column table}
+\begin{tabular}{|l|l|}
+  \hline
+  \multicolumn{2}{|c|}{Team sheet} \\
+  \hline
+  GK & Paul Robinson \\
+  LB & Lucus Radebe \\
+  DC & Michael Duberry \\
+  DC & Dominic Matteo \\
+  RB & Didier Domi \\
+  MC & David Batty \\
+  MC & Eirik Bakke \\
+  MC & Jody Morris \\
+  FW & Jamie McMaster \\
+  ST & Alan Smith \\
+  ST & Mark Viduka \\
+  \hline
+\end{tabular}
+
+\section{Multi-Row}
+\begin{tabular}{|l|l|l|}
+\hline
+\multicolumn{3}{|c|}{Team sheet} \\
+\hline
+Goalkeeper & GK & Paul Robinson \\ \hline
+\multirow{4}{*}{Defenders} & LB & Lucus Radebe \\
+ & DC & Michael Duberry \\
+ & DC & Dominic Matteo \\
+ & RB & Didier Domi \\ \hline
+\multirow{3}{*}{Midfielders} & MC & David Batty \\
+ & MC & Eirik Bakke \\
+ & MC & Jody Morris \\ \hline
+Forward & FW & Jamie McMaster \\ \hline
+\multirow{2}{*}{Strikers} & ST & Alan Smith \\
+ & ST & Mark Viduka \\
+\hline
+\end{tabular}
+

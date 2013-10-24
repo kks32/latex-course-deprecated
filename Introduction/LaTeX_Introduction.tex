@@ -239,6 +239,22 @@ draft & Draft - no images. \\
 \end{frame}
 
 
+%**********************************************FRAME***************************************
+\begin{frame}{Fonts}
+\begin{itemize}
+\item \tiny $\backslash$tiny
+\item \scriptsize $\backslash$scriptsize
+\item \footnotesize $\backslash$footnotesize
+\item \small $\backslash$small
+\item \normalsize $\backslash$normalsize
+\item \large $\backslash$large
+\item \Large $\backslash$Large
+\item \LARGE $\backslash$LARGE
+\item \huge $\backslash$huge
+\item \Huge $\backslash$Huge
+\end{itemize}
+\end{frame}
+
 
 %**********************************************FRAME***************************************
 
@@ -262,22 +278,6 @@ $\backslash$ & \$$\backslash$backslash\$ \\
 
 
 %**********************************************FRAME***************************************
-\begin{frame}{Fonts}
-\begin{itemize}
-\item \tiny $\backslash$tiny
-\item \scriptsize $\backslash$scriptsize
-\item \footnotesize $\backslash$footnotesize
-\item \small $\backslash$small
-\item \normalsize $\backslash$normalsize
-\item \large $\backslash$large
-\item \Large $\backslash$Large
-\item \LARGE $\backslash$LARGE
-\item \huge $\backslash$huge
-\item \Huge $\backslash$Huge
-\end{itemize}
-\end{frame}
-
-%**********************************************FRAME***************************************
 \begin{frame}{Ligatures}
 \begin{figure}
 \centering
@@ -293,6 +293,46 @@ $\backslash$ & \$$\backslash$backslash\$ \\
 D.Taraborelli (2008), The Beauty of \LaTeX
 \end{frame}
 
+
+%**********************************************FRAME***************************************
+\begin{frame}{Equations}
+The Energy-Momentum Relation: $E^2 = (m_0c^2)^2 + (pc)^2$ \\
+\begin{equation}
+ f(x)= \sin^2x+\frac{\tan \mathit{x}}{\log \mathit{x}} + \mathbf{X}^T\times\mathbf{X}
+\end{equation}
+
+\begin{equation*}
+\iint_{0}^{\infty}   f(x,y)dx dy
+\end{equation*}
+
+\begin{eqnarray}
+	y   & = & ax+b \nonumber\\
+	y+1 & = & ax+(b+1)\\
+	    & = & ax+(b+2)-1
+\end{eqnarray}
+
+\end{frame}
+
+%**********************************************FRAME***************************************
+\begin{frame}{Equations cont\dots}
+
+\begin{multline}
+f(x)=a1x_1+a2x_2+a3x_3+a_4x_4+
+\sqrt{a1x_1+a2x_2+a3x_3+a_4x_4}+\\
+a1x_1+a2x_2+a3x_3+a_4x_4+
+a1x_1+a2x_2+a3x_3+a_4x_4
+\end{multline}
+
+\begin{equation}
+A_{m,n} =
+ \begin{pmatrix}
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n}
+ \end{pmatrix}
+\end{equation}
+\end{frame}
 
 %**********************************************FRAME***************************************
 \begin{frame}{Matrix}

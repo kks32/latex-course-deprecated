@@ -1,0 +1,55 @@
+% Exercise 9: Here you will learn about using equations, matrices and inline mathmode.
+
+\documentclass{article}
+
+% 1. Note the use of amsmath package to have equations/mathmode enabled
+\usepackage{amsmath}
+\title{Equations}
+\date{}
+\begin{document}
+\maketitle
+
+\section*{Inline Equation}
+
+% 2. To create an inline equation use $equation_in_here$  Lets now type the famous energy-momentum relation $E^2 = m_0^2 c^4 + (pc)^2$
+
+% *. an underscore x_{y} will create y as a subscript to x and x^y will generate y as a superscript.
+The most famous equation in the world:  - The \textbf{energy-mass-momentum} relation as an in-line equation.
+
+\section{equation and align environment}
+
+% 3. Use the equation environment \begin{equation} \end{equation}to type your equations ;) Try to type the equation shown in Slide: 14-15 in Intro Presentation % % % %: \begin{equation} f(x)= \sin^2x+\frac{\tan \mathit{x}}{\log \mathit{x}} + \mathbf{X}^T\times\mathbf{X} \end{equation}
+
+
+% 4. Now Lets ask LaTeX not to number the equation by using * at the end of the environment name \begin{equation*} \end{equation*}: % % % %:  \begin{equation*} \iint_{0}^{\infty} f(x,y)dx dy \end{equation*}
+
+% 5. It's time to have multiple equations and align them. Note: & aligns the equations and see use of \nonumber. Uncomment the following section and see how it affects the output.
+% then add & on either side of the equals sign on all equations and see the output like y & = & ax+ b
+
+%\begin{eqnarray}
+%	y    =  ax+b \nonumber\\
+%	y+1  = ax+(b+1)\\
+%	     = ax+(b+2)-1
+%\end{eqnarray}
+
+% 6. If you have a long equation you can fold the equation using a newline \\
+%\begin{multline}
+%f(x)=a1x_1+a2x_2+a3x_3+a_4x_4+
+%\sqrt{a1x_1+a2x_2+a3x_3+a_4x_4}+\\
+%a1x_1+a2x_2+a3x_3+a_4x_4+
+%a1x_1+a2x_2+a3x_3+a_4x_4
+%\end{multline}
+
+
+% 7. A Matrix can be generated using pmatrix or bmatrix or vmatrix environment. Try to change pmatrix to bmatrix or vmatrix and see what difference it makes.
+%\begin{equation}
+%A_{m,n} =
+% \begin{pmatrix}
+%  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+%  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+%  \vdots  & \vdots  & \ddots & \vdots  \\
+%  a_{m,1} & a_{m,2} & \cdots & a_{m,n}
+% \end{pmatrix}
+%\end{equation}
+
+\end{document}

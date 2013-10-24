@@ -1,0 +1,33 @@
+\documentclass[openany]{book}
+%\usepackage[numbers]{natbib}
+%\usepackage[super,comma,sort]{natbib}
+\usepackage[round,colon,authoryear]{natbib}
+\usepackage{setspace}
+\usepackage{cleveref}
+\begin{document}
+\chapter{This is my First Chapter}
+
+Here I can reference the section on Chapter 2 (see.~\cref{sec_label}). To add reference open the bibliography file in TexStudio. Then you can cite in whatever manner you wish~\citet{Agn2007} or like~\citep{Choi2005,Dasari2000,frisch1995}
+
+\chapter{Second Chapter}
+\section{Section to be labelled}  \label{sec_label}
+Second chapter goes on \dots
+
+I can also have some more references here \dots can't I? \citet{Gallouat2010}.
+
+Here I have listed it as \citep[see][]{mehta1994}
+
+
+
+
+%********************************************Bibliography**********************************************************************%
+
+\begin{spacing}{0.9}
+\bibliographystyle{apalike} % bibliography style - apalike, plain
+\renewcommand{\bibname}{References} % changes default name Bibliography to References
+\cleardoublepage
+\addcontentsline{toc}{chapter}{References} %adds References to contents page
+\bibliography{References}
+\end{spacing}
+%************************************************************************************************************************************** %
+\end{document}
