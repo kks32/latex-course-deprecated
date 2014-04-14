@@ -25,15 +25,24 @@ The most famous equation in the world:  - The \textbf{energy-mass-momentum} rela
 % 4. Now Lets ask LaTeX not to number the equation by using * at the end of the environment name \begin{equation*} \end{equation*}: % % % %:  \begin{equation*} \iint_{0}^{\infty} f(x,y)dx dy \end{equation*}
 
 % 5. It's time to have multiple equations and align them. Note: & aligns the equations and see use of \nonumber. Uncomment the following section and see how it affects the output.
-% then add & on either side of the equals sign on all equations and see the output like y & = & ax+ b
+% try using [fleqn] as a document class option to see what happens
+% then add & on left hand side of the equals sign on all equations and see the output like y & = ax+ b
 
-%\begin{eqnarray}
+%\begin{align}
 %	y    =  ax+b \nonumber\\
 %	y+1  = ax+(b+1)\\
 %	     = ax+(b+2)-1
-%\end{eqnarray}
+%\end{align}
 
-% 6. If you have a long equation you can fold the equation using a newline \\
+% 6. Try using gather environment to center the equations
+
+%\begin{gather}
+%	y    =  ax+b \nonumber\\
+%	y+1  = ax+(b+1)\\
+%	     = ax+(b+2)-1
+%\end{gather}
+
+% 7. If you have a long equation you can fold the equation using a newline \\
 %\begin{multline}
 %f(x)=a1x_1+a2x_2+a3x_3+a_4x_4+
 %\sqrt{a1x_1+a2x_2+a3x_3+a_4x_4}+\\
