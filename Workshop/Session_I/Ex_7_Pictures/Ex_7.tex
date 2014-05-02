@@ -5,7 +5,7 @@
 % 2. Uncomment the following preamble packages to load options for figures
 % Preamble
 \usepackage{graphicx} % for figures
-%\usepackage{subfig} % for subplots
+%\usepackage{subcaption} % for subplots 
 %\usepackage{wrapfig} %Wrap around figures
 %\usepackage{lscape} %for landscape
 %\usepackage{hyperref} % Hyperreferencing 
@@ -128,17 +128,27 @@ The very first buildings of the college, now part of the Old Schools, were begun
 I can refer to Wall-E (see Fig.~\ref{fig:WallE}) and Minions in despicable me (~\ref{fig:Minnion}) or I can refer to the whole figure as (Fig.~\ref{fig:animations})
 
 
-% 16. A subplot can be created inside the figure environment using \subfloat and \includegraphics{name} for each subfigure.
+% 16. A subplot can be created inside the figure environment using \begin{subfigure} and \includegraphics{name} for each subfigure. Please not use subcaption package instead of subfig
 
 %\begin{figure}
 %  \centering
-%  \subfloat[A Tom and Jerry]{\label{fig:TomJerry}\includegraphics[width=0.5\textwidth]{Pictures/TomandJerry.jpg}}                
-%  \subfloat[A Wall-E]{\label{fig:WallE}\includegraphics[width=0.5\textwidth]{Pictures/WallE.jpg}}
-%  \subfloat[A Minion]{\label{fig:Minnion}\includegraphics[width=0.5\textwidth]{Pictures/minion.jpg}}
+%  \begin{subfigure}[b]{0.3\textwidth}
+%    \includegraphics[width=\textwidth]{TomandJerry.jpg}
+%    \caption{Tom and Jerry}
+%    \label{fig:TomJerry}   
+%  \end{subfigure}             
+%  \begin{subfigure}[b]{0.3\textwidth}
+%    \includegraphics[width=\textwidth]{WallE.jpg}
+%    \caption{Wall-E}
+%    \label{fig:WallE}
+%  \end{subfigure}             
+%  \begin{subfigure}[b]{0.3\textwidth}
+%    \includegraphics[width=\textwidth]{minion.jpg}
+%    \caption{A Minion}
+%    \label{fig:Minnion}
+%  \end{subfigure}
 %  \caption{Best Animations}
 %  \label{fig:animations}
 %\end{figure}
-%\end{landscape}
-
 
 \end{document}

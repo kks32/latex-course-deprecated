@@ -1,7 +1,7 @@
 \documentclass{report} 
 % Preamble
 \usepackage{graphicx} % for figures
-\usepackage{subfig} % for subplots
+\usepackage{subcaption} % for subplots
 \usepackage{wrapfig} %Wrap around figures
 \usepackage{lscape} %for landscape
 \usepackage{hyperref} % Hyperreferencing 
@@ -101,13 +101,24 @@ I can refer to Wall-E (see Fig.~\ref{fig:WallE}) and Minions in despicable me (~
  
 \begin{figure}
   \centering
-  \subfloat[A Tom and Jerry]{\label{fig:TomJerry}\includegraphics[width=0.5\textwidth]{Pictures/TomandJerry.jpg}}                
-  \subfloat[A Wall-E]{\label{fig:WallE}\includegraphics[width=0.5\textwidth]{Pictures/WallE.jpg}}
-  \subfloat[A Minion]{\label{fig:Minnion}\includegraphics[width=0.5\textwidth]{Pictures/minion.jpg}}
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{Pictures/TomandJerry.jpg}
+    \caption{Tom and Jerry}
+    \label{fig:TomJerry}   
+  \end{subfigure}             
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{Pictures/WallE.jpg}
+    \caption{Wall-E}
+    \label{fig:WallE}
+  \end{subfigure}             
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{Pictures/minion.jpg}
+    \caption{A Minion}
+    \label{fig:Minnion}
+  \end{subfigure}
   \caption{Best Animations}
   \label{fig:animations}
 \end{figure}
+
 \end{landscape}
-
-
 \end{document}
