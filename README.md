@@ -1,6 +1,6 @@
 latex-course
 ============
-> This repo is now deprecated. Please visit https://github.com/kks32/latex-course
+> This repo is now deprecated. Please visit https://github.com/kks32-courses/latex
 
 A short course on LaTeX for Beginners: How to write your reports/papers/thesis in LaTeX. 
 
